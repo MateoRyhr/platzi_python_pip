@@ -65,3 +65,15 @@ Herramientas de codigo
 * python3  Verificar la Instalación
 
 [Clase](https://platzi.com/home/clases/4261-python-pip/55123-instalacion-en-mac/)
+
+* 4. ## Python con VSCode
+
+Vamos a utilizar el editor de código más utilizado en este momento: Visual Studio Code.
+
+Es un editor liviano en el cual podemos instalar extensiones a medida que necesitemos.
+
+Extensiones a instalar:
+1. Python
+2. WSL (Windows Subsystem for Linux)
+
+* 5. ## Python con Git y GitHub
