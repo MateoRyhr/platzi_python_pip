@@ -77,3 +77,14 @@ Extensiones a instalar:
 2. WSL (Windows Subsystem for Linux)
 
 * 5. ## Python con Git y GitHub
+
+* 6. ## Flujo de trabajo en Python
+
+Para ejecutar un script de Python:
+
+```bash
+python script.py
+```
+
+En un repositorio en GitHub en el **README.md** debemos explicar **que es** el proyecto y **como ejecutarlo**. Documentar el proyecto.
+
