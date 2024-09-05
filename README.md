@@ -46,3 +46,22 @@ Comandos
     pip -V --> ver version de pip
 
 [Clase](https://platzi.com/home/clases/4261-python-pip/55122-instalacion-en-windows-wsl-y-linux/)
+
+* 3. ## Instalación en Mac
+
+Comandos utilizados
+
+* python o python3
+* exit()
+
+Normalmente viene instalado en Mac, en caso de que no lo tenga continuar con estos comandos 
+
+Herramientas de codigo
+
+* sudo xcode-select --install
+* sudo xcode-select --reset
+
+* brew install python3 --> Instalación de python
+* python3  Verificar la Instalación
+
+[Clase](https://platzi.com/home/clases/4261-python-pip/55123-instalacion-en-mac/)
