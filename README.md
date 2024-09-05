@@ -29,6 +29,7 @@ Al igual que con cualquier lenguaje de programación serio, Python admite biblio
 Pero descargar, instalar y administrar estos paquetes a mano puede ser frustrante y llevar mucho tiempo, por lo que muchos desarrolladores de Python confían en una herramienta especial llamada PIP para que Python haga todo mucho más fácil y rápido.
 
 ¿Qué es PIP para Python?
+
 PIP es un acrónimo que significa "Paquetes de instalación PIP" o "Programa de instalación preferida o Preferred Installer Program". Es una utilidad de línea de comandos que le permite instalar, reinstalar o desinstalar paquetes PyPI con un comando simple y directo: "pip".
 
 Si alguna vez ha realizado algún trabajo de línea de comandos en Windows (con el símbolo del sistema) o Mac o Linux (con el Terminal y Bash), entonces te sentirás como en casa y puedes ir directamente a las instrucciones de instalación para su particular sistema operativo.
@@ -88,3 +89,26 @@ python script.py
 
 En un repositorio en GitHub en el **README.md** debemos explicar **que es** el proyecto y **como ejecutarlo**. Documentar el proyecto.
 
+* 7. ## ¿Qué es PIP?
+
+Una de las cosas más interesantes de Python es su ecosistema de frameworks y librerías, que podemos usar para crear nuestros proyectos, así no reinventar la rueda para solucionar ciertos problemas en específico.
+
+Todos estos paquetes los encontramos de forma pública en PyPI (Python Package Index)
+
+**PIP: Preferred Installer Program**. Es una utilidad de línea de comandos que le permite instalar, reinstalar o desinstalar paquetes PyPI con un comando simple y directo: "pip".
+
+    pip -V --> verificamos tener pip, que version
+
+**PyPI** : https://pypi.org/
+    
+* Aca podemos buscar los paquetes, entrar y ver como se instalan. Suele ser de la forma:
+
+        pip install package_name
+
+Por ejemplo *matplotlib*: es una biblioteca integral para crear visualizaciones estáticas, animadas e interactivas en Python. Se instala:
+
+    pip install matplotlib
+
+### Comandos PIP
+
+    pip freeze -> vemos los paquetes instalados en el entorno global de Python
