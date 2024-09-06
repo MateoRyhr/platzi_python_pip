@@ -131,3 +131,24 @@ Un entorno virtual (o ambiente virtual) en el contexto de Python es una herramie
 * **Gestión de dependencias**: Facilita la especificación de dependencias necesarias para tu proyecto en un archivo requirements.txt.
 * **Evitar conflictos**: Previene que las bibliotecas de un proyecto afecten a otros proyectos o al entorno global de Python.
 * **Limpieza y organización**: Permite una gestión ordenada y eliminación de entornos virtuales no utilizados.
+
+* 10. ## Usando entornos virtuales en Python
+
+**READ** --> https://docs.python.org/3/library/venv.html
+
+Para crear un entorno virtual ejecutamos el comando
+
+    #              (venv_directory) --> contendra todo el venv
+    python -m venv venv
+
+Ahora tenemos que activar el ambiente
+
+    source ./venv/Scripts/activate
+
+Ahora podemos ver con ```pip freeze``` que no hay librerias instaladas y con which python que apunta al venv.
+Tenemos un entorno aislado.
+
+Para salir del ambiente virtual ejecutamos
+
+    deactivate
+
