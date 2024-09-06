@@ -115,3 +115,19 @@ Por ejemplo *matplotlib*: es una biblioteca integral para crear visualizaciones 
 
 * 8. ## Gráficas en Python con PIP
 
+* 9. ## ¿Qué es un entorno virtual?
+
+Instalar a nivel global puede causar distintos problemas al momento de manejar diferentes proyectos, por ejemplo para algunos proyectos necesitaras otro tipo de version, libreria o modulos y para solucionar esto se creo un ambiente virtual en python el cual encapsula cada proyecto y no lo deja de forma compartida.
+
+<img src="./img/entornos_virtuales.png">
+
+### **¿Qué es un entorno virtual en Python?**
+
+Un entorno virtual (o ambiente virtual) en el contexto de Python es una herramienta que te permite **crear un espacio aislado** en tu sistema donde puedes **instalar paquetes y dependencias de Python sin afectar** el entorno global de Python en tu máquina.
+
+### Beneficios de los entornos virtuales:
+
+* **Aislamiento**: Cada entorno virtual es independiente y aísla las bibliotecas y paquetes que instalas en él.
+* **Gestión de dependencias**: Facilita la especificación de dependencias necesarias para tu proyecto en un archivo requirements.txt.
+* **Evitar conflictos**: Previene que las bibliotecas de un proyecto afecten a otros proyectos o al entorno global de Python.
+* **Limpieza y organización**: Permite una gestión ordenada y eliminación de entornos virtuales no utilizados.
