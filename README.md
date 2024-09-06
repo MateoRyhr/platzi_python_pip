@@ -112,3 +112,6 @@ Por ejemplo *matplotlib*: es una biblioteca integral para crear visualizaciones 
 ### Comandos PIP
 
     pip freeze -> vemos los paquetes instalados en el entorno global de Python
+
+* 8. ## Gráficas en Python con PIP
+
