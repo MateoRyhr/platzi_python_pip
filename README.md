@@ -152,3 +152,19 @@ Para salir del ambiente virtual ejecutamos
 
     deactivate
 
+* 11. ## requeriments.txt
+
+El archivo requeriments.txt en un proyecto contiene las dependencias del proyecto y que versiones de estas dependencias.
+
+Para crear este archivo:
+
+    pip freeze > requeriments.txt
+
+Para instalar la lista de dependencias:
+
+    pip install -r requeriments.txt
+
+* 12. ## Solicitudes HTTP con Requests
+
+
+
