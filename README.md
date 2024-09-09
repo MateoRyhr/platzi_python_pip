@@ -204,3 +204,13 @@ Pandas es una **librería para el análisis y manipulación de datos** de archiv
 https://pandas.pydata.org/
 
 https://platzi.com/cursos/pandas-numpy/
+
+* 14. ## Python para Backend: web server con FastAPI
+
+Framework para creación de APIs
+
+        pip install fastapi
+
+Servidor web para mantener online la API
+
+        pip install "uvicorn[standard]"
