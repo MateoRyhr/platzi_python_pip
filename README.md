@@ -214,3 +214,27 @@ Framework para creación de APIs
 Servidor web para mantener online la API
 
         pip install "uvicorn[standard]"
+
+* 15. ## ¿Qué es Docker?
+
+<img src="./img/docker.png" width="480">
+
+Docker es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos. Docker utiliza características de aislamiento de recursos del kernel Linux, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, evitando la sobrecarga de iniciar y mantener máquinas virtuales.
+
+El soporte del kernel Linux para los espacios de nombres aísla la vista que tiene una aplicación de su entorno operativo, incluyendo árboles de proceso, red, ID de usuario y sistemas de archivos montados, mientras que los cgroups del kernel proporcionan aislamiento de recursos, incluyendo la CPU, la memoria, el bloque de E/S y de la red. Desde la versión 0.9, Docker incluye la biblioteca libcontainer como su propia manera de utilizar directamente las facilidades de virtualización que ofrece el kernel Linux, además de utilizar las interfaces abstraídas de virtualización mediante libvirt, LXC (Linux Containers) y systemd-nspawn.
+
+Docker implementa una API de alto nivel para proporcionar contenedores livianos que ejecutan procesos de manera aislada.
+
+Construido sobre las facilidades proporcionadas por el kernel Linux (principalmente cgroups y namespaces), un contenedor Docker, a diferencia de una máquina virtual, no requiere incluir un sistema operativo independiente. En su lugar, se basa en las funcionalidades del kernel y utiliza el aislamiento de recursos (CPU, la memoria, el bloque E / S, red, etc.) y namespaces separados para aislar la vista de una aplicación del sistema operativo. Docker accede a la virtualización del kernel Linux ya sea directamente a través de la biblioteca libcontainer (disponible desde Docker 0.9), o indirectamente a través de libvirt, LXC o systemd-nspawn.
+
+Mediante el uso de contenedores, los recursos pueden ser aislados, los servicios restringidos, y se otorga a los procesos la capacidad de tener una visión casi completamente privada del sistema operativo con su propio identificador de espacio de proceso, la estructura del sistema de archivos, y las interfaces de red. Contenedores múltiples comparten el mismo núcleo, pero cada contenedor puede ser restringido a utilizar solo una cantidad definida de recursos como CPU, memoria y E / S.
+
+Usar Docker para crear y gestionar contenedores puede simplificar la creación de sistemas altamente distribuidos, permitiendo que múltiples aplicaciones, las tareas de los trabajadores y otros procesos funcionen de forma autónoma en una única máquina física o en varias máquinas virtuales.
+
+* Ejemplo de Docker
+
+Supongamos que estás trabajando en un proyecto de aplicación web con un equipo de desarrolladores. Cada desarrollador tiene su propia computadora y cada uno está utilizando un sistema operativo diferente (Windows, MacOS o Linux). Además, cada uno de ellos tiene diferentes versiones de las herramientas y bibliotecas necesarias para desarrollar la aplicación.
+
+Con Docker, puedes crear un contenedor que incluya todo lo necesario para ejecutar la aplicación, incluyendo el código, las herramientas y las bibliotecas. Luego, cada desarrollador puede ejecutar la aplicación en su propia computadora simplemente instalando Docker y ejecutando el contenedor. De esta manera, cada uno de los desarrolladores puede trabajar en el mismo entorno, sin importar el sistema operativo o las herramientas que tenga instaladas.
+
+Cuando esté lista para desplegar la aplicación en producción, puedes subir el contenedor a un repositorio de Docker y luego ejecutarlo en cualquier servidor que tenga Docker instalado. De esta manera, puedes asegurarte de que la aplicación funcione de la misma manera en todos los entornos, desde el desarrollo hasta la producción.
