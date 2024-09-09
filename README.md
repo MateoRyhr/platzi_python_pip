@@ -166,5 +166,33 @@ Para instalar la lista de dependencias:
 
 * 12. ## Solicitudes HTTP con Requests
 
+Una de las librerías mas usadas de Python es:
 
+* **Requests**
 
+    Se encarga de hacer peticiones a otro tipo de servidores web desde Python.
+
+Empezamos un proyecto nuevo que consultará APIs llamado web-server.
+
+1. Creamos el directorio:
+        
+        mkdir web-server
+
+2. Creamos el entorno virtual y lo activamos:
+
+        python -m venv venv
+        source ./venv/Scripts/activate
+
+3. Chequeamos que el proyecto quedo aislado y listo para empezar a instalar dependencias:
+
+        pip freeze
+
+4. Instalamos las dependencias necesarias:
+
+        pip install requests
+
+5. Listamos las dependencias en un archivo para mejorar la documentacióny divulgación del proyecto.
+
+        pip freeze > requeriments.txt
+
+6. No olvides hacer todo esto con un sistema de control de versiones como Git y documentar el proyecto.
