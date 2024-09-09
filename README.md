@@ -196,3 +196,11 @@ Empezamos un proyecto nuevo que consultará APIs llamado web-server.
         pip freeze > requeriments.txt
 
 6. No olvides hacer todo esto con un sistema de control de versiones como Git y documentar el proyecto.
+
+* 13. ## Pandas
+
+Pandas es una **librería para el análisis y manipulación de datos** de archivos duros como .csv.
+
+https://pandas.pydata.org/
+
+https://platzi.com/cursos/pandas-numpy/
