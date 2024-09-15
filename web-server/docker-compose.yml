@@ -4,5 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-    - .:/csv
+      - .:/csv
+    ports:
+      - '80:80'
     

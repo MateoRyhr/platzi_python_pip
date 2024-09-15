@@ -17,6 +17,9 @@ def generate_pie_chart(labels,values):
     ax.axis('equal')
     plt.show();
 
+# Testeando la vinculación de archivos de docker.
+# 2 - Testeando la vinculación de archivos de docker.
+# 3 - Testeando la vinculación de archivos de docker.
 
 if __name__ == '__main__':
     labels = ['a','b','c']

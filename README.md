@@ -152,17 +152,17 @@ Para salir del ambiente virtual ejecutamos
 
     deactivate
 
-* 11. ## requeriments.txt
+* 11. ## requirements.txt
 
-El archivo requeriments.txt en un proyecto contiene las dependencias del proyecto y que versiones de estas dependencias.
+El archivo requirements.txt en un proyecto contiene las dependencias del proyecto y que versiones de estas dependencias.
 
 Para crear este archivo:
 
-    pip freeze > requeriments.txt
+    pip freeze > requirements.txt
 
 Para instalar la lista de dependencias:
 
-    pip install -r requeriments.txt
+    pip install -r requirements.txt
 
 * 12. ## Solicitudes HTTP con Requests
 
@@ -193,7 +193,7 @@ Empezamos un proyecto nuevo que consultará APIs llamado web-server.
 
 5. Listamos las dependencias en un archivo para mejorar la documentacióny divulgación del proyecto.
 
-        pip freeze > requeriments.txt
+        pip freeze > requirements.txt
 
 6. No olvides hacer todo esto con un sistema de control de versiones como Git y documentar el proyecto.
 
@@ -303,11 +303,13 @@ FROM python:3.9
 
 WORKDIR /app
 
-COPY requeriments.txt /app/requeriments.txt
+COPY requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /app/requeriments.txt
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY . /app/
+
+CMD bash -c "while true; do sleep 1; done"
 ```
 
 ¿Cómo vamos a ejecutar este contenedor?
@@ -349,4 +351,48 @@ Como ingresar al container para desarrollar desde allí:
 Para salir del contenedor
 
         exit
+
+* 18. ## Docker para el día a día: automatizando la vinculación de archivos
+
+Como enlazar los archivos del proyecto con los archivos del contenedor para tener un live reloading y hacer más fluido el trabajo.
+
+```yml
+ services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+vinculacion de los archivos      
+  volumes:
+    - .:/csv
+```
+
+19. ## Dockerizando web serbices
+
+```Dockerfile
+FROM python:3.9
+
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+COPY . /app/
+
+CMD bash -c "uvicorn; main:app; --host; 0.0.0.0; --port; 80;
+# o tambien --> CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+```
+
+```yml
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/csv
+    ports:
+      - '80:80'
+```
 
